@@ -1,0 +1,91 @@
+/*font import*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* colors */
+    --background-color: #000000;
+    --text-color: #ffffff;
+    
+
+    /* font*/
+    --text-font-family: 'Poppins', sans-serif;
+    --title-font-weight: 700;
+    --button-font-weight: 500;
+    --paragraph-font-weight: 400;
+    --title-font-size: 3rem;
+    --paragraph-font-size: 1.2rem;
+}
+
+body{
+    background-image: url(../assets/Background\ -\ Página\ Inicial.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--text-color);
+    font-family: var(--text-font-family);
+    width: 100%;
+    height: 100vh;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gradient {
+    background-image: linear-gradient(to right, #69066B, #639900, #1A6B06);
+    color: #ffffff;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    -webkit-text-fill-color: transparent;
+}
+
+#divConteudo{
+    width: 100%;
+    height: auto;
+}
+
+#divConteudo h1{
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    color: var(--text-color);
+    margin-bottom: .5rem;
+}
+
+#divConteudo p{
+    font-size: var(--paragraph-font-size);
+    font-weight: var(--paragraph-font-weight);
+    color: var(--text-color);
+    margin-bottom: 5rem;
+}
+
+#divConteudo a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--text-font-family);
+    font-size: var(--paragraph-font-size);
+    font-weight: var(--button-font-weight);
+    padding: 0.5rem 1rem;
+    border: .15rem solid #ffffff;
+    border-radius: 1rem;
+    background-color: transparent;
+}
+
+#divConteudo a:hover{
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
